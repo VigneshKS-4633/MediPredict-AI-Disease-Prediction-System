@@ -1,0 +1,226 @@
+/* Global Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbar.bg-gradient {
+    background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #000 !important;
+    font-weight: 600;
+}
+
+.navbar-brand i {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+    color: #000;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+}
+
+.hero-section h1 {
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.2);
+    color: #000;
+}
+
+.hero-section p {
+    color: #000;
+    font-weight: 500;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+    padding: 1.25rem;
+}
+
+.card-header.bg-gradient {
+    background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Select2 Customization */
+.select2-container--default .select2-selection--multiple {
+    border-color: #dee2e6;
+    border-radius: 10px;
+    min-height: 120px;
+    padding: 8px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin: 4px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: white;
+    margin-right: 8px;
+}
+
+/* Progress Bar */
+.progress {
+    height: 12px;
+    border-radius: 6px;
+    margin-top: 10px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    transition: width 0.6s ease;
+}
+
+/* Info Cards */
+.info-card {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card i {
+    font-size: 2rem;
+    display: block;
+}
+
+/* Prediction Results */
+.prediction-box {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.prediction-text {
+    color: #0d6efd;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.description-text {
+    line-height: 1.6;
+    color: #495057;
+}
+
+/* Precautions List */
+.precautions-list .list-group-item {
+    border: none;
+    background-color: #f8f9fa;
+    margin-bottom: 8px;
+    border-radius: 10px !important;
+    padding: 12px 15px;
+    transition: transform 0.3s ease;
+}
+
+.precautions-list .list-group-item:hover {
+    transform: translateX(5px);
+    background-color: #e9ecef;
+}
+
+/* About Section */
+#about {
+    background-color: white;
+    border-radius: 15px;
+    padding: 2rem 0;
+}
+
+#about h5 {
+    color: #0d6efd;
+    margin-bottom: 1.5rem;
+}
+
+#about ul li {
+    margin-bottom: 0.75rem;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, #212529 0%, #343a40 100%);
+}
+
+.footer h5 {
+    color: #0dcaf0;
+    margin-bottom: 1.25rem;
+}
+
+.footer p {
+    opacity: 0.9;
+}
+
+.footer hr {
+    border-color: rgba(255,255,255,0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#results.show {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 2rem 0;
+    }
+    
+    .card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .info-card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Loading Animation */
+.loading-spinner {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+} 
